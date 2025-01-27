@@ -23,6 +23,7 @@ function Questions() {
           >
             {Array.from({ length: 10 }).map((_, index) => (
               <Box
+              data-aos="zoom-out-left"
                 key={index}
                 sx={{
                   height: 50,

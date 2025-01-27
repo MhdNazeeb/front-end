@@ -1,6 +1,7 @@
 import { Box, Typography } from '@mui/material'
 import React from 'react'
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import typography from '../theme/typography';
 
 
 interface ViewAllProps {
@@ -10,7 +11,7 @@ interface ViewAllProps {
 }
 function ViewAll({heading,titile,view}: ViewAllProps) {
   return (
-    <Box sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
+    <Box sx={{ width: "100%", display: "flex", justifyContent: "center",marginTop:1 }}>
     <Box
       sx={{
         width: "80%",
@@ -19,8 +20,8 @@ function ViewAll({heading,titile,view}: ViewAllProps) {
       }}
     >
       <Box>
-        <Typography>{heading}</Typography>
-        <Typography>{titile}</Typography>
+        <Typography sx={typography.title}>{heading}</Typography>
+        <Typography sx={typography.description}>{titile}</Typography>
       </Box>
       <Box sx={{ display: "flex", gap: 1 }}>
         <Typography>View All {view}</Typography>

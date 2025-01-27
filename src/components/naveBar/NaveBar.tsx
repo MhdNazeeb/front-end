@@ -39,7 +39,7 @@ export default function NaveBar(props: Props) {
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
             <Typography variant="h6" >
-                MUI
+                COCA
             </Typography>
             <Divider />
             <List>

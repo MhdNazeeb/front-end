@@ -6,7 +6,10 @@ import typography from "../../theme/typography";
 
 function BolgCards() {
   return (
-    <Card sx={{ maxWidth:{xs:"100%"}, padding: 2}}>
+    <Card 
+    data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom"
+    sx={{ maxWidth:{xs:"100%"}, padding: 2}}>
       <Box
         sx={{
           display: "flex",
@@ -23,7 +26,7 @@ function BolgCards() {
           style={{ borderRadius: 5 }}
         />
       </Box>
-      <Typography sx={{ marginLeft: 2, marginTop: 2 ,font:5}}>
+      <Typography sx={{ marginLeft: 2, marginTop: 2 ,...typography.title}}>
         june,23,2024 
         </Typography>
 
@@ -31,12 +34,12 @@ function BolgCards() {
 
       </Box>
       <Box sx={{ width: 250, marginLeft: 2 ,marginTop:2}}>
-        <Typography sx={typography.h1}>
+        <Typography sx={typography.title.sm}>
           Avoid Trouble: Common Legal Mistake to Keep Away
         </Typography>
       </Box>
       <Box sx={{ width: 350, marginLeft: 2,marginTop:2 }}>
-        <Typography sx={typography.discription}>
+        <Typography sx={typography.description}>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s

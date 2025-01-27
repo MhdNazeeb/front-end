@@ -11,6 +11,7 @@ import JoinComponent from "./Join/JoinComponent";
 import Blogs from "./blogs/Blogs";
 import Questions from "./questions/Questions";
 import Choose from "./choose/Choose";
+import Footer from "./footer/Footer";
 
 function Home() {
   return (
@@ -36,8 +37,9 @@ function Home() {
         <Blogs />
         <Questions />
         <Choose />
-
+        <Footer />
       </div>
+
     </div>
   );
 }

@@ -5,11 +5,9 @@ import ViewAll from "../ViewAll";
 
 const Services = () => {
   return (
-    <Box sx={{ marginTop: 5 }}>
-      {/* Header */}
+    <Box sx={{ marginTop: 5,paddingTop:3}}>
        <ViewAll heading={'Services'} titile={'A wide range of legal services'} view={"Services"} />
 
-      {/* Responsive Grid */}
       <Box sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
         <Box
           sx={{

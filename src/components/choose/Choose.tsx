@@ -20,6 +20,7 @@ function Choose() {
           flexDirection: "column",
           alignItems: "center",
           position: "relative",
+          
         }}
       >
         <Box
@@ -33,8 +34,8 @@ function Choose() {
           }}
         >
           <Box sx={{ width: { xs: "100%", sm: "30%" } }}>
-            <Typography variant="h5">Why Choose Us?</Typography>
-            <Typography sx={{ fontSize: 14, marginTop: 1 }}>
+            <Typography variant="h5" sx={{ fontWeight: "bold",color:palette.primary.main,fontSize:{xs:17,sm:25} }}>Why Choose Us?</Typography>
+            <Typography sx={{ marginTop: 1 ,color:palette.primary.main, fontSize:{xs:7,sm:9}}}>
               We prioritize integrity, transparency, and expert guidance in all
               legal matters. Our team is dedicated to providing personalized
               solutions, ensuring compliance, and protecting your rights every
@@ -75,6 +76,7 @@ function Choose() {
                 justifyContent: "space-between",
                 padding: 2,
               }}
+              data-aos="flip-down"
             >
               <Box sx={{ width: "100%", textAlign: "center" }}>
                 <Typography variant="h6">
@@ -99,9 +101,11 @@ function Choose() {
       </Box>
       <Box
         sx={{
-          marginTop: { xs: "80%", sm: "30%" },
+          marginTop: { xs: "80%", sm: "30%",md:"16%" },
           display: "flex",
           justifyContent: "center",
+
+          
         }}
       >
         <Box
@@ -115,7 +119,7 @@ function Choose() {
         >
           <Box>
             <Typography variant="h5">Newsletter</Typography>
-            <Typography sx={typography.discription}>
+            <Typography sx={typography.description}>
               Here is The title of the features or service in the Here is The
               title of the features or service in
             </Typography>

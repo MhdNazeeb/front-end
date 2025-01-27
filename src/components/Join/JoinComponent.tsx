@@ -1,4 +1,5 @@
-import { Box, Button, Card, Grid2, Typography } from "@mui/material";
+
+import { Box, Button, Card, Typography } from "@mui/material";
 import React from "react";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import grapgh from "../../assets/images/grapgh.png";
@@ -10,66 +11,85 @@ function JoinComponent() {
       sx={{
         backgroundColor: palette.secondary.main,
         display: "flex",
+        flexDirection: { xs: "column", md: "row" }, 
         justifyContent: "center",
-        gap: 2,
+        alignItems: "center",
+        gap: { xs: 3, md: 2 },
         paddingY: 5,
+        paddingX: { xs: 2, md: 0 }, 
       }}
     >
       <Card
         sx={{
-          width: "20%",
-          height: 250,
+          width: { xs: "100%", md: "20%" }, 
+          height: { xs: 200, md: 250 }, 
           backgroundColor: palette.secondary.main,
-          display: { xs: "none", md: "flex" },
+          display: "flex",
           justifyContent: "center",
+          alignItems: "center",
           border: "2px solid gray",
           boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-          alignItems: "center",
         }}
+        data-aos="zoom-in-down"
       >
         <Box>
-          <img src={grapgh} alt="flag" width={"60%"} height={"60%"} />
+          <img
+            src={grapgh}
+            alt="flag"
+            style={{ width: "100%", height: "100%", objectFit: "contain" }} 
+          />
         </Box>
       </Card>
+
       <Box
         sx={{
-          width: "55%",
+          width: { xs: "100%", md: "55%" }, 
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-around",
+          gap: { xs: 3, md: 2 }
         }}
       >
-        <Box sx={{ width: "60%" }}>
-          <Typography>Join as a lawyer</Typography>
-          <Typography>Join as a lawyer</Typography>
-
-          <Typography>
+        <Box sx={{ width: { xs: "100%", md: "60%" } }}>
+          <Typography variant="h6" sx={{ fontWeight: "bold",color:palette.primary.main,fontSize:{xs:17,sm:25} }}>
+            Join as a lawyer
+          </Typography>
+          <Typography variant="body1" sx={{ marginTop: 1 ,color:palette.primary.main,fontSize:{xs:10,sm:13}}}>
             Become a part of our professional legal network and offer your
             expertise to clients in need. As a lawyer, you will have the
-            opportunity to represent individuals, provide legal advice{" "}
+            opportunity to represent individuals, provide legal advice, and more.
           </Typography>
         </Box>
-        <Box>
-          <Box
-            sx={{
-              display: "flex",
-              flexWrap: "wrap",
-              gap: 1,
-              flexDirection: "row",
-            }}
-          >
-            {Array.from(Array(4)).map((_, index) => (
-              <Button
-                sx={{ paddingX: { sm: 10, xs: 4,md:13 }, display: "flex", gap: 1 }}
-                variant="contained"
-              >
-                <CheckCircleIcon />
-                Contained
-              </Button>
-            ))}
-          </Box>
+
+        {/* Buttons Section */}
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: 1,
+            justifyContent: { xs: "center", md: "flex-start" }, 
+          }}
+        >
+          {Array.from(Array(4)).map((_, index) => (
+            <Button
+              key={index}
+              sx={{
+                paddingX: { xs: 4, sm: 10, md: 13 }, 
+                display: "flex",
+                gap: 1,
+                flex: { xs: "1 1 45%", md: "none" }, 
+              }}
+              variant="contained"
+              data-aos="zoom-in-up"
+            >
+              <CheckCircleIcon />
+              Contained
+            </Button>
+          ))}
         </Box>
-        <Box sx={{ marginTop: 2 }}>
+
+        {/* Single Button Section */}
+        <Box sx={{ display: "flex", justifyContent: { xs: "center", md: "flex-start" } }}>
           <Button sx={{ paddingX: 4 }} variant="contained">
             Contained
           </Button>
