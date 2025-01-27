@@ -1,4 +1,3 @@
-import React from 'react'
 import AccessAlarmsIcon from '@mui/icons-material/AccessAlarms';
 import { Box, Typography } from '@mui/material';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
