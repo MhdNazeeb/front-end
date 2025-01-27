@@ -21,7 +21,7 @@ function Blogs() {
         paddingY: 3,
       }}
     >
-      {Array.from(Array(3)).map((_, index) => (
+      {Array.from(Array(3)).map((_, ) => (
         <BolgCards  />
       ))}
     </Box>
