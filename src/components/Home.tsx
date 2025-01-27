@@ -1,4 +1,3 @@
-import React from "react";
 import NaveBar from "./naveBar/NaveBar";
 import Banner from "./Banner";
 import Filter from "./filter/Filter";

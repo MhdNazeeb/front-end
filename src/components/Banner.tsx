@@ -1,5 +1,4 @@
 import { Box, Button, Typography } from "@mui/material";
-import React from "react";
 import strings from "../common/string";
 import palette from "../theme/palette";
 import AddIcCallIcon from "@mui/icons-material/AddIcCall";

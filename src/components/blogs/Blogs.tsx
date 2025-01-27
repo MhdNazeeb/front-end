@@ -1,8 +1,6 @@
-import { Box, Typography } from "@mui/material";
-import React from "react";
+import { Box,  } from "@mui/material";
 import ViewAll from "../ViewAll";
 import BolgCards from "./BolgCards";
-import palette from "../../theme/palette";
 
 function Blogs() {
   return (

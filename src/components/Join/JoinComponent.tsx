@@ -1,6 +1,5 @@
 
 import { Box, Button, Card, Typography } from "@mui/material";
-import React from "react";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import grapgh from "../../assets/images/grapgh.png";
 import palette from "../../theme/palette";

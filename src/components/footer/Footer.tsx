@@ -1,7 +1,6 @@
 
 
 import { Box, Typography } from '@mui/material';
-import React from 'react';
 import AddIcCallIcon from '@mui/icons-material/AddIcCall';
 import AdjustIcon from '@mui/icons-material/Adjust';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -10,7 +9,6 @@ import XIcon from '@mui/icons-material/X';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import GoogleIcon from '@mui/icons-material/Google';
 import AppleIcon from '@mui/icons-material/Apple';
-import PhonelinkRingIcon from '@mui/icons-material/PhonelinkRing';
 import AddCardIcon from '@mui/icons-material/AddCard';
 import typography from '../../theme/typography';
 

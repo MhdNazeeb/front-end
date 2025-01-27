@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import { consultations } from "../../common/constens";
 import { MultiServices } from "./MultiServices";
 import ViewAll from "../ViewAll";

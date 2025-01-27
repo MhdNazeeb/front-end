@@ -1,7 +1,5 @@
 import { Box, Card, Typography } from "@mui/material";
-import React from "react";
 import blog from "../../assets/images/blog.webp";
-import palette from "../../theme/palette";
 import typography from "../../theme/typography";
 
 function BolgCards() {

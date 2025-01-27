@@ -1,15 +1,11 @@
 import { Box, Button, Typography } from "@mui/material";
-import React from "react";
 import {
   filtering,
   FilterOption,
-  ServiceOption,
-  services,
 } from "../../common/constens";
 import FilterCategory from "./FilterCategory";
 import palette from "../../theme/palette";
 import BookOnlineOutlinedIcon from "@mui/icons-material/BookOnlineOutlined";
-import Services from "../service/Services";
 
 function Filter() {
   return (
