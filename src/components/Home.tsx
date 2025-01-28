@@ -55,8 +55,7 @@ function Home() {
         <JoinComponent />
         <Blogs />
         <Questions />
-        <Choose />
-        
+        <Choose /> 
         <Footer />
       </div>
 
