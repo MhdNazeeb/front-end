@@ -11,6 +11,8 @@ import Blogs from "./blogs/Blogs";
 import Questions from "./questions/Questions";
 import Choose from "./choose/Choose";
 import Footer from "./footer/Footer";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 
 function Home() {
   return (
@@ -19,7 +21,7 @@ function Home() {
         minHeight: "100vh",
         backgroundColor: palette.primary.main,
         paddingBottom: 2,
-        overflow:"hidden"
+        overflowX:"hidden"
       }}
     >
       <NaveBar />
@@ -29,6 +31,23 @@ function Home() {
           <Filter />
         </Box>
         <Service />
+        <div style={{position:"relative"}}>
+        <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          gap: 2,
+          position:{xs:"fixed",sm:"absolute"},
+          zIndex:1,
+          top:{md:100,xs:400,sm:200},
+          left:{sm:20},
+          right:{xs:15,sm:0},
+        }}
+      >
+        <WhatsAppIcon />
+        <SupportAgentIcon />
+      </Box>
+      </div>
       </div>
       <div style={{ backgroundColor: "#F5FBFF" }}>
         <MultiService />

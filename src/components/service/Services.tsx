@@ -16,7 +16,7 @@ function Services({ item }: FilterCategoryProps) {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        width:{md:"18%"}
+        width:{md:"18%"},
       }}
     >
       <Box
