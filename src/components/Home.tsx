@@ -19,6 +19,7 @@ function Home() {
         minHeight: "100vh",
         backgroundColor: palette.primary.main,
         paddingBottom: 2,
+        overflow:"hidden"
       }}
     >
       <NaveBar />

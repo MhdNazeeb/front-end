@@ -9,7 +9,7 @@ export interface FilterOption {
     description: string;
   }
 
-export const navItems: string[] = ['Home', 'About', 'Contactewq','Home', 'About', 'Contactewr'];
+export const navItems: string[] = ['Home', 'About', 'Service','Support Us', 'Gallery', 'Contact'];
 
 
   

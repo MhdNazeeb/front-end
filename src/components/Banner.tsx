@@ -6,6 +6,7 @@ import BookIcon from "@mui/icons-material/Book";
 
 function Banner() {
   return (
+   <div style={{overflow:"hidden"}}>
     <Box
       sx={{
         minHeight: { xs: "80%", sm: "70%", md: "90%" },
@@ -13,7 +14,6 @@ function Banner() {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        backgroundImage: "url(/assets/images/banner.jpg)",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundColor: palette.secondary.main,
@@ -101,6 +101,7 @@ function Banner() {
         </Box>
       </Box>
     </Box>
+    </div>
   );
 }
 
