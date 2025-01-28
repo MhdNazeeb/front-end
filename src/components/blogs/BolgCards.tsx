@@ -36,7 +36,7 @@ function BolgCards() {
           Avoid Trouble: Common Legal Mistake to Keep Away
         </Typography>
       </Box>
-      <Box sx={{ width: 350, marginLeft: 2,marginTop:2 }}>
+      <Box sx={{ width: {sm:350,xs:200}, marginLeft: 2,marginTop:2 }}>
         <Typography sx={typography.description}>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever

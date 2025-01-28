@@ -21,7 +21,7 @@ function Home() {
         minHeight: "100vh",
         backgroundColor: palette.primary.main,
         paddingBottom: 2,
-        overflowX:"hidden"
+        overflowX: "hidden",
       }}
     >
       <NaveBar />
@@ -31,23 +31,23 @@ function Home() {
           <Filter />
         </Box>
         <Service />
-        <div style={{position:"relative"}}>
-        <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          gap: 2,
-          position:{xs:"fixed",sm:"absolute"},
-          zIndex:1,
-          top:{md:100,xs:400,sm:200},
-          left:{sm:20},
-          right:{xs:15,sm:0},
-        }}
-      >
-        <WhatsAppIcon />
-        <SupportAgentIcon />
-      </Box>
-      </div>
+        <div style={{ position: "relative" }}>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              gap: 2,
+              position: { xs: "fixed", sm: "absolute" },
+              zIndex: 1,
+              top: { md: 100, xs: 400, sm: 200 },
+              left: { sm: 20 },
+              right: { xs: 15, sm: 0 },
+            }}
+          >
+            <WhatsAppIcon />
+            <SupportAgentIcon />
+          </Box>
+        </div>
       </div>
       <div style={{ backgroundColor: "#F5FBFF" }}>
         <MultiService />
@@ -55,10 +55,9 @@ function Home() {
         <JoinComponent />
         <Blogs />
         <Questions />
-        <Choose /> 
+        <Choose />
         <Footer />
       </div>
-
     </div>
   );
 }
