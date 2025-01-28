@@ -56,6 +56,7 @@ function Home() {
         <Blogs />
         <Questions />
         <Choose />
+        
         <Footer />
       </div>
 

@@ -17,7 +17,7 @@ function Footer() {
     return (
         <Box sx={{ position: 'relative', top: { xs: 310, sm: 0, md: 6 } }}>
             {/* Top Section */}
-            <Box sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
+            <Box sx={{ width: "100%",minHeight:"30vh", display: "flex", justifyContent: "center" }}>
                 <Box
                     sx={{
                         width: "80%",
